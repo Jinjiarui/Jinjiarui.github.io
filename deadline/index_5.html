@@ -1,0 +1,395 @@
+---
+layout: default
+title: Jiarui Jin
+home: passive
+publication: passive
+project: passive
+misc: passive
+deadline: active
+---
+<script type="text/javascript"> 
+ 
+	function countDown(data, fn)
+	{
+	   var timer = setInterval(function()
+	   {	
+			target=new Date(data); //"month/day/year"
+			today=new Date(); 
+			time_distance=(target.getTime()-today.getTime())
+		   if(parseInt(time_distance)>0){
+			int_day=Math.floor(time_distance/86400000);
+			int_hour=Math.floor((time_distance-int_day*86400000)/3600000);
+			int_minute=Math.floor((time_distance-int_hour*3600000-int_day*86400000)/60000);
+			int_second=Math.floor((time_distance-int_minute*60000-int_hour*3600000-int_day*86400000)/1000);
+			if(int_hour<10)
+				int_hour="0"+int_hour;
+			if(int_minute<10)
+				int_minute="0"+int_minute;
+			if(int_second<10)
+				int_second="0"+int_second;
+				msg="("+int_day+"days"+" "+int_hour+"hours"+" "+int_minute+"minutes"+" "+int_second+"seconds"+")";
+			 fn( msg );
+			}else{
+				msg ="("+"0days"+" "+"0hours"+" "+"0minutes"+" "+"0seconds"+")";
+				fn(msg);
+			}
+			time_distance=time_distance-1000;
+		}, 1000);
+	}
+</script>
+
+<div class="Home">
+    <span style="font-size: 20px; color:#A22900"><center><b>All deadlines are shown in Asia/Shanghai time.</b></center></span>
+</div>
+
+<div class="main_cell">
+
+    <h3>Artificial Intelligence Area</h3>
+    <ul>
+    
+    <li>
+        <details class="details" open> 
+        <summary>
+            <span style="color:navy">Conference on Uncertainty in Artificial Intelligence (UAI 2021)</span> 
+            <a href="http://www.auai.org/uai2021/"><b>&#9758 Link</b></a>
+        </summary> 
+            Full Paper: February 20, 2021 <span id="uai_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("02/20/2021 19:59:59",function(msg){document.getElementById('uai_abstract_dt').innerHTML = msg;}); </script><br/>
+            Notifications: May 13, 2021.<br/>
+            Recent Acceptance Rate: 26.0%, 30.8%, 31.0% (2019-2017)
+        </details>
+    </li>
+
+    <li>
+        <details class="details"> 
+        <summary>
+            <span style="color:navy">AAAI Conference on Artificial Intelligence (AAAI 2021)</span> 
+            <a href="https://aaai.org/Conferences/AAAI-21/"><b>&#9758 Link</b></a>
+        </summary> 
+            Abstract: September 1, 2020 <span id="aaai_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("09/01/2020 19:59:59",function(msg){document.getElementById('aaai_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: September 10, 2020 <span id="aaai_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("09/10/2020 19:59:59",function(msg){document.getElementById('aaai_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: Decemeber 2, 2020. <br/>
+            Recent Acceptance Rate: 21.4%, 20.6%, 16.2% (2021-2019)
+        </details>
+    </li>
+    
+    <li>
+        <details class="details"> 
+        <summary>
+            <span style="color:navy">International Conference on Learning Representations (ICLR 2021)</span>
+            <a href="https://iclr.cc/"><b>&#9758 Link</b></a>
+        </summary>
+            Full Paper: October 2, 2020 <span id="iclr_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("10/02/2020 22:59:59",function(msg){document.getElementById('iclr_full_dt').innerHTML = msg;}); </script><br/>
+                Notifications: January 12, 2021. <br/>
+                Recent Acceptance Rate: 28.7%, 26.5%, 31.4% (2021-2019)
+        </details>
+    </li>
+    
+    <li>
+        <details class="details"> 
+        <summary>
+            <span style="color:navy">International Conference on Artificial Intelligence and Statistics (AISTATS 2021)</span>
+            <a href="http://aistats.org/aistats2021/index.html"><b>&#9758 Link</b></a>
+        </summary>
+            Abstract: October 8, 2020 <span id="aistats_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+        <script type="text/javascript">	countDown("10/01/2020 22:59:59",function(msg){document.getElementById('aistats_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: October 15, 2020 <span id="aistats_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+        <script type="text/javascript">	countDown("10/15/2020 22:59:59",function(msg){document.getElementById('aistats_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: January 22, 2021. <br/>
+            Recent Acceptance Rate: 32.4%, 33.2%, 31.7% (2019-2017)
+        </details>
+    </li>
+
+    <li>
+        <details class="details">
+        <summary>
+            <span style="color:navy">International Joint Conference on Artificial Intelligence (IJCAI 2021)</span> 
+            <a href="https://ijcai-21.org/"><b>&#9758 Link</b></a>
+        </summary> 
+            Abstract: January 13, 2020 <span id="ijcai_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("01/16/2021 19:59:59",function(msg){document.getElementById('ijcai_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: January 19, 2021 <span id="ijcai_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("01/22/2021 19:59:59",function(msg){document.getElementById('ijcai_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: April 25, 2021. <br/>
+            Recent Acceptance Rate: 12.6%, 17.9%, 20.5% (2020-2018)				
+        </details>
+    </li>
+    
+    <a></a></ul>
+    
+    
+    <h3>Machine Learning Area</h3>
+    <ul>
+    
+    <li>
+        <details class="details">
+            <summary> 
+            <span style="color: navy">Conference on Neural Information Processing Systems (NeurIPS 2020)</span>
+                <a href="https://nips.cc/"><b>&#9758 Link</b></a>
+            </summary>
+            Abstract: May 28, 2020 <span id="nips_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("05/28/2020 03:59:59",function(msg){document.getElementById('nips_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: June 4, 2020 <span id="nips_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("06/04/2020 03:59:59",function(msg){document.getElementById('nips_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: September 26, 2020.<br/>
+            Recent Acceptance Rate: 20.1%, 21.1%, 20.8% (2020-2018)
+        </details>
+    </li>
+
+    <li>
+        <details class="details"> 
+        <summary>
+            <span style="color:navy">International Conference on Machine Learning (ICML 2021)</span>
+            <a href="https://icml.cc/Conferences/2021"><b>&#9758 Link</b></a>
+        </summary>
+            Abstract: January 29, 2021 <span id="icml_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("01/29/2021 19:59:59",function(msg){document.getElementById('icml_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: February 5, 2021 <span id="icml_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("02/05/2021 19:59:59",function(msg){document.getElementById('icml_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: May 10, 2021.<br/> 
+            Recent Acceptance Rate: 21.8%, 22.6%, 25.1%, 25.9% (2020-2018)
+        </details>
+    </li>
+    
+    <a></a></ul>
+            
+    
+    <h3>Data Mining and Information Retrieval Area</h3>
+    <ul>
+    
+    <li>
+        <details class="details">
+            <summary>
+            <span style="color: navy">International Conference on Information and Knowledge Management (CIKM 2020)</span>
+                <a href="https://cikm2020.org/"><b>&#9758 Link</b></a>
+            </summary>	
+            Abstract: April 25, 2020 <span id="cikm_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+            <script type="text/javascript">	countDown("04/25/2020 17:59:59",function(msg){document.getElementById('cikm_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: May 2, 2020 <span id="cikm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("05/02/2020 17:59:59",function(msg){document.getElementById('cikm_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: July 4, 2020.<br/> 
+            Recent Acceptance Rate: 21.0%, 19.4%, 17.0% (2020-2018)
+        </details>
+    </li>
+    
+    <li>
+        <details class="details">
+            <summary>	
+            <span style="color: navy">International Conference on Data Mining (ICDM 2020)</span>
+                <a href="http://icdm2020.bigke.org/"><b>&#9758 Link</b></a>
+            </summary>
+            Full Paper: June 12, 2020 <span id="icdm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("06/12/2020 14:59:59",function(msg){document.getElementById('icdm_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: August 21, 2020.<br/> 
+            Recent Acceptance Rate: 9.8%, 9.1%, 8.9%, 9.3% (2020-2018)
+        </details>
+    </li>
+
+    <li>
+        <details class="details">
+            <summary> 
+            <span style="color: navy">International Conference on Web Search and Data Mining (WSDM 2021)</span>
+                <a href="http://www.wsdm-conference.org/2021/"><b>&#9758 Link</b></a>
+            </summary>
+            Abstract: August 13, 2020 <span id="wsdm_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("08/13/2020 17:59:59",function(msg){document.getElementById('wsdm_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: August 17, 2020 <span id="wsdm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("08/17/2020 17:59:59",function(msg){document.getElementById('wsdm_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: October 13, 2020.<br/> 
+            Recent Acceptance Rate: 15.0%, 16.4%, 16.1% (2020-2018)
+        </details>
+    </li>
+
+    <li>
+        <details class="details">
+        <summary> 
+            <span style="color: navy">The Web Conference (WWW 2021)</span>
+            <a href="http://www2021.thewebconf.org/"><b>&#9758 Link</b></a>
+        </summary>	
+            Abstract: October 13, 2020 <span id="www_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("10/13/2020 17:59:59",function(msg){document.getElementById('www_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: October 20, 2020 <span id="www_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("10/20/2020 17:59:59",function(msg){document.getElementById('www_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: January 16, 2021.<br/> 
+            Recent Acceptance Rate: 20.6%, 19.2%, 18.0% (2021-2019)
+        </details>
+    </li>
+
+    <li>
+        <details class="details">
+            <summary>
+            <span style="color: navy">SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2021)</span>
+                <a href="https://www.kdd.org/kdd2021/"><b>&#9758 Link</b></a>
+            </summary>	
+            Full Paper: February 9, 2021 <span id="kdd_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("02/09/2021 19:59:59",function(msg){document.getElementById('kdd_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: May 17, 2021.<br/> 
+            Recent Acceptance Rate: 16.8%, 14.2%, 18.4% (2020-2018)
+        </details>
+    </li>
+
+    <li>
+        <details class="details">
+            <summary> 
+            <span style="color: navy">SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2021)</span>
+                <a href="https://sigir.org/sigir2021/"><b>&#9758 Link</b></a>
+            </summary>
+            Abstract: February 3, 2021 <span id="ir_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("02/03/2021 19:59:59",function(msg){document.getElementById('ir_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: February 10, 2021 <span id="ir_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("02/10/2021 19:59:59",function(msg){document.getElementById('ir_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: April 19, 2021.<br/> 
+            Recent Acceptance Rate: 26.0%, 19.7%, 21.0% (2020-2018)
+        </details>
+        </li>
+    
+    <a></a></ul>
+    
+    
+    <h3>Computer Vision Area</h3>
+    <ul>
+    
+    <li>
+        <details class="details" open>
+            <summary>
+            <span style="color: navy">International Conference on Computer Vision (ICCV 2021)</span>
+                <a href="http://iccv2021.thecvf.com/home"><b>&#9758 Link</b></a>
+            </summary>
+            Abstract: March 11, 2021 <span id="iccv_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("03/11/2021 15:59:59",function(msg){document.getElementById('iccv_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: March 18, 2021 <span id="iccv_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("03/18/2021 15:59:59",function(msg){document.getElementById('iccv_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: July 23, 2021.<br/> 
+            Recent Acceptance Rate: 25.0%, 29.0%, 30.9% (2019, 2017, 2015)
+        </details>
+    </li>
+
+    <li>
+        <details class="details" open>
+        <summary>
+            <span style="color: navy">International Conference on Multimedia (MM 2021)</span>
+            <a href="https://2021.acmmm.org/"><b>&#9758 Link</b></a>
+        </summary>
+            Abstract: March 28, 2021 <span id="mm_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("03/28/2021 19:59:59",function(msg){document.getElementById('mm_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: April 4, 2020 <span id="mm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("04/04/2021 19:59:59",function(msg){document.getElementById('mm_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: July 4, 2021.<br/> 
+            Recent Acceptance Rate: 26.5%, 27.5%, 28% (2019-2017)
+        </details>
+    </li>  
+    
+    <li>
+        <details class="details">
+            <summary>
+            <span style="color: navy">European Conference on Computer Vision (ECCV 2020)</span>
+                <a href="https://eccv2020.eu/"><b>&#9758 Link</b></a>
+            </summary>	
+            Full Paper: March 6, 2020 <span id="eccv_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+            <script type="text/javascript">	countDown("03/05/2020 07:59:59",function(msg){document.getElementById('eccv_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: July 4, 2020.<br/> 
+            Recent Acceptance Rate: 27.1%, 31.8%, 26.6% (2020, 2018, 2016)
+        </details>
+    </li>
+
+    <li>
+        <details class="details">
+        <summary>
+            <span style="color: navy">Conference on Computer Vision and Pattern Recognition (CVPR 2021)</span>
+            <a href="http://cvpr2021.thecvf.com/"><b>&#9758 Link</b></a>
+        </summary>
+            Abstract: November 10, 2021 <span id="cvpr_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("11/17/2020 15:59:59",function(msg){document.getElementById('cvpr_abstract_dt').innerHTML = msg;}); </script><br/>
+            Full Paper: November 17, 2020 <span id="cvpr_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("11/17/2020 15:59:59",function(msg){document.getElementById('cvpr_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: February 23, 2021.<br/> 
+            Recent Acceptance Rate: 22.1%, 25.0%, 29.6% (2020-2018)
+        </details>
+    </li>
+    <a></a></ul>
+    
+    
+    <h3>Natural Language Processing Area</h3>
+    <ul>					
+    
+    <li>
+        <details class="details" open>
+        <summary>
+            <span style="color: navy">Conference on Empirical Methods in Natural Language Processing (EMNLP 2021)</span>
+                <a href="https://2021.emnlp.org/"><b>&#9758 Link</b></a>
+        </summary>
+        Abstract: May 11, 2021 <span id="emnlp_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("05/11/2021 19:59:59",function(msg){document.getElementById('emnlp_abstract_dt').innerHTML = msg;}); </script><br/>
+        Full Paper: May 18, 2021 <span id="emnlp_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("05/18/2021 19:59:59",function(msg){document.getElementById('emnlp_full_dt').innerHTML = msg;}); </script><br/>
+        Notifications: August 26, 2021.<br/>
+        Recent Acceptance Rate: 22.4%, 23.8%, 25.5% (2020-2018)
+        </details>
+    </li>
+
+    <li>
+        <details class="details">
+        <summary>
+            <span style="color: navy">International Conference on Computational Linguistics (COLING 2020)</span>
+                <a href="https://coling2020.org/"><b>&#9758 Link</b></a>
+        </summary>
+            Full Paper: July 2, 2020 <span id="coling_full_dt" style="color:rgb(162, 41, 0)" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("07/02/2020 19:59:59",function(msg){document.getElementById('coling_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: October 1, 2020.<br/> 
+            Recent Acceptance Rate: 33.4%, 37.4%, 32.4% (2020, 2018, 2016)
+        </details>
+    </li>
+
+
+    <li>
+        <details class="details">
+        <summary>
+            <span style="color: navy">Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2021)</span>
+                <a href="https://2021.naacl.org/"><b>&#9758 Link</b></a>
+        </summary>
+            Full Paper: November 24, 2020 <span id="naacl_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("11/24/2020 19:59:59",function(msg){document.getElementById('naacl_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: March 11, 2021.<br/> 
+            Recent Acceptance Rate: 26.3%, 32.0%, 25.3% (2019-2017)
+        </details>
+    </li>
+
+    <li>
+        <details class="details">
+        <summary>
+            <span style="color: navy">Annual Meeting of the Association for Computational Linguistics (ACL 2021)</span>
+                <a href="https://2021.aclweb.org/"><b>&#9758 Link</b></a>
+        </summary>
+            Full Paper: February 2, 2021 <span id="acl_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script type="text/javascript">	countDown("02/02/2021 19:59:59",function(msg){document.getElementById('acl_full_dt').innerHTML = msg;}); </script><br/>
+            Notifications: May 5, 2021.<br/> 
+            Recent Acceptance Rate: 25.4%, 25.7%, 25.3% (2020-2018)
+        </details>
+    </li>
+    
+    <a></a></ul>
+    
+    <h3>Acknowledgement</h3>
+    <table style="width:100%" cellspacing="20" valign="top">
+        <tr>
+        <td><img src="./images/coffee5.png" border="0" width="220"></td>
+        <td valign="top" align='left'>
+        <b>If you find it useful, consider buying Jerry a coffee via Wechat :)</b><br>
+        <span style=color:#A22900><center><a href="index.html"><b>2 YUAN</b></a> OR <b>5 YUAN </b>(Thanks BOSS !!!)</center></span>
+        Jiarui thanks <a href="https://aideadlin.es/?sub=NLP,ML,RO,SP,CV,DM">Abhishek Das</a> and <a href="https://github.com/lixin4ever/Conference-Acceptance-Rate?utm_source=wechat_session&utm_medium=social&utm_oi=698628813000548352">Xin Li</a> for userful Information.<br>
+        Anyone who has any suggestion or wants to support this website together is more than welcome. Please feel free to contact <a href="https://jinjiarui.github.io/">Jiarui</a> (Email: jinjiarui97 [AT] gmail.com).
+        </td>
+    </table>
+    
+    
+    <div id="footer">
+        <div id="footer-text"></div>
+    </div>
+    </a></div><a>
+    
+    
+    </a></body></html>
+</div>
