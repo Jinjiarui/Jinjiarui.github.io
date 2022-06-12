@@ -7,39 +7,39 @@ project: passive
 misc: passive
 deadline: active
 ---
-<script type="text/javascript"> 
- 
-	function countDown(data, fn)
-	{
-	   var timer = setInterval(function()
-	   {	
-			target=new Date(data); //"month/day/year"
-			today=new Date(); 
-			time_distance=(target.getTime()-today.getTime())
-		   if(parseInt(time_distance)>0){
-			int_day=Math.floor(time_distance/86400000);
-			int_hour=Math.floor((time_distance-int_day*86400000)/3600000);
-			int_minute=Math.floor((time_distance-int_hour*3600000-int_day*86400000)/60000);
-			int_second=Math.floor((time_distance-int_minute*60000-int_hour*3600000-int_day*86400000)/1000);
-			if(int_hour<10)
-				int_hour="0"+int_hour;
-			if(int_minute<10)
-				int_minute="0"+int_minute;
-			if(int_second<10)
-				int_second="0"+int_second;
-				msg="("+int_day+"days"+" "+int_hour+"hours"+" "+int_minute+"minutes"+" "+int_second+"seconds"+")";
-			 fn( msg );
-			}else{
-				msg ="("+"0days"+" "+"0hours"+" "+"0minutes"+" "+"0seconds"+")";
-				fn(msg);
-			}
-			time_distance=time_distance-1000;
-		}, 1000);
-	}
+<script type="text/javascript">
+
+    function countDown(data, fn) {
+        var timer = setInterval(function () {
+            target = new Date(data); //"month/day/year"
+            today = new Date();
+            time_distance = (target.getTime() - today.getTime())
+            if (parseInt(time_distance) > 0) {
+                int_day = Math.floor(time_distance / 86400000);
+                int_hour = Math.floor((time_distance - int_day * 86400000) / 3600000);
+                int_minute = Math.floor((time_distance - int_hour * 3600000 - int_day * 86400000) / 60000);
+                int_second = Math.floor((time_distance - int_minute * 60000 - int_hour * 3600000 - int_day * 86400000) / 1000);
+                if (int_hour < 10)
+                    int_hour = "0" + int_hour;
+                if (int_minute < 10)
+                    int_minute = "0" + int_minute;
+                if (int_second < 10)
+                    int_second = "0" + int_second;
+                msg = "(" + int_day + "days" + " " + int_hour + "hours" + " " + int_minute + "minutes" + " " + int_second + "seconds" + ")";
+                fn(msg);
+            } else {
+                msg = "(" + "0days" + " " + "0hours" + " " + "0minutes" + " " + "0seconds" + ")";
+                fn(msg);
+            }
+            time_distance = time_distance - 1000;
+        }, 1000);
+    }
 </script>
 
 <div class="Home">
-    <span style="font-size: 20px; color:#A22900"><center><b>All deadlines are shown in Asia/Shanghai time.</b></center></span>
+    <span style="font-size: 20px; color:#A22900">
+        <center><b>All deadlines are shown in Asia/Shanghai time.</b></center>
+    </span>
 </div>
 
 <div class="main_cell">
@@ -47,349 +47,471 @@ deadline: active
     <h3>Artificial Intelligence Area</h3>
     <ul>
 
-    <li>
-        <details class="details" open> 
-        <summary>
-            <span style="color:navy">AAAI Conference on Artificial Intelligence (AAAI 2023)</span> 
-            <a href="https://aaai.org/Conferences/AAAI-23/"><b>&#9758 Link</b></a>
-        </summary> 
-            Abstract: August 9, 2022 <span id="aaai_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("08/09/2022 19:59:59",function(msg){document.getElementById('aaai_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: August 16, 2022 <span id="aaai_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("08/16/2022 19:59:59",function(msg){document.getElementById('aaai_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: November 2, 2022. <br/>
-            Recent Acceptance Rate: 15.0%, 21.4%, 20.6% (2022-2020)
-        </details>
-    </li>
-    
-    <li>
-        <details class="details"> 
-        <summary>
-            <span style="color:navy">International Conference on Learning Representations (ICLR 2022)</span>
-            <a href="https://iclr.cc/"><b>&#9758 Link</b></a>
-        </summary>
-            Abstract: September 30, 2021 <span id="iclr_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-            <script type="text/javascript">	countDown("09/30/2021 22:59:59",function(msg){document.getElementById('iclr_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: October 7, 2021 <span id="iclr_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("10/07/2021 22:59:59",function(msg){document.getElementById('iclr_full_dt').innerHTML = msg;}); </script><br/>
-                Notifications: January 24, 2022. <br/>
+        <li>
+            <details class="details" open>
+                <summary>
+                    <span style="color:navy">AAAI Conference on Artificial Intelligence (AAAI 2023)</span>
+                    <a href="https://aaai.org/Conferences/AAAI-23/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: August 9, 2022 <span id="aaai_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("08/09/2022 19:59:59", function (msg) { document.getElementById('aaai_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: August 16, 2022 <span id="aaai_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("08/16/2022 19:59:59", function (msg) { document.getElementById('aaai_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: November 2, 2022. <br />
+                Recent Acceptance Rate: 15.0%, 21.4%, 20.6% (2022-2020)
+            </details>
+        </li>
+
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color:navy">International Conference on Learning Representations (ICLR 2022)</span>
+                    <a href="https://iclr.cc/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: September 30, 2021 <span id="iclr_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("09/30/2021 22:59:59", function (msg) { document.getElementById('iclr_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: October 7, 2021 <span id="iclr_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("10/07/2021 22:59:59", function (msg) { document.getElementById('iclr_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: January 24, 2022. <br />
                 Recent Acceptance Rate: 32.9%, 28.7%, 26.5% (2022-2020)
-        </details>
-    </li>
-    
-    <li>
-        <details class="details"> 
-        <summary>
-            <span style="color:navy">International Conference on Artificial Intelligence and Statistics (AISTATS 2022)</span>
-            <a href="http://aistats.org/aistats2022/"><b>&#9758 Link</b></a>
-        </summary>
-            Abstract: October 9, 2021 <span id="aistats_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-        <script type="text/javascript">	countDown("10/09/2021 22:59:59",function(msg){document.getElementById('aistats_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: October 23, 2020 <span id="aistats_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-        <script type="text/javascript">	countDown("10/23/2021 22:59:59",function(msg){document.getElementById('aistats_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: January 19, 2022. <br/>
-            Recent Acceptance Rate: 29.2%, 29.8% (2022-2021)
-        </details>
-    </li>
+            </details>
+        </li>
 
-    <li>
-        <details class="details">
-        <summary>
-            <span style="color:navy">International Joint Conference on Artificial Intelligence (IJCAI 2022)</span> 
-            <a href="https://ijcai-22.org/"><b>&#9758 Link</b></a>
-        </summary> 
-            Abstract: January 8, 2022 <span id="ijcai_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("01/08/2022 19:59:59",function(msg){document.getElementById('ijcai_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: January 15, 2021 <span id="ijcai_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("01/15/2022 19:59:59",function(msg){document.getElementById('ijcai_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: April 21, 2022. <br/>
-            Recent Acceptance Rate: 13.9%, 12.6%, 17.9% (2022-2020)				
-        </details>
-    </li>
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color:navy">International Conference on Artificial Intelligence and Statistics (AISTATS
+                        2022)</span>
+                    <a href="http://aistats.org/aistats2022/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: October 9, 2021 <span id="aistats_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("10/09/2021 22:59:59", function (msg) { document.getElementById('aistats_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: October 23, 2020 <span id="aistats_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("10/23/2021 22:59:59", function (msg) { document.getElementById('aistats_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: January 19, 2022. <br />
+                Recent Acceptance Rate: 29.2%, 29.8% (2022-2021)
+            </details>
+        </li>
 
-    <li>
-        <details class="details"> 
-        <summary>
-            <span style="color:navy">Conference on Uncertainty in Artificial Intelligence (UAI 2022)</span> 
-            <a href="https://www.auai.org/uai2022/"><b>&#9758 Link</b></a>
-        </summary> 
-            Full Paper: February 26, 2022 <span id="uai_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("02/26/2021 19:59:59",function(msg){document.getElementById('uai_abstract_dt').innerHTML = msg;}); </script><br/>
-            Notifications: May 17, 2021.<br/>
-            Recent Acceptance Rate: 32.3%, 26.3%, 27.5% (2022-2020)
-        </details>
-    </li>
-    
-    <a></a></ul>
-    
-    
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color:navy">International Joint Conference on Artificial Intelligence (IJCAI
+                        2022)</span>
+                    <a href="https://ijcai-22.org/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: January 8, 2022 <span id="ijcai_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("01/08/2022 19:59:59", function (msg) { document.getElementById('ijcai_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: January 15, 2021 <span id="ijcai_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("01/15/2022 19:59:59", function (msg) { document.getElementById('ijcai_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: April 21, 2022. <br />
+                Recent Acceptance Rate: 13.9%, 12.6%, 17.9% (2022-2020)
+            </details>
+        </li>
+
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color:navy">Conference on Uncertainty in Artificial Intelligence (UAI 2022)</span>
+                    <a href="https://www.auai.org/uai2022/"><b>&#9758 Link</b></a>
+                </summary>
+                Full Paper: February 26, 2022 <span id="uai_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("02/26/2021 19:59:59", function (msg) { document.getElementById('uai_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: May 17, 2021.<br />
+                Recent Acceptance Rate: 32.3%, 26.3%, 27.5% (2022-2020)
+            </details>
+        </li>
+
+        <a></a>
+    </ul>
+
+
     <h3>Machine Learning Area</h3>
     <ul>
-    
-    <li>
-        <details class="details"> 
-        <summary>
-            <span style="color:navy">International Conference on Machine Learning (ICML 2022)</span>
-            <a href="https://icml.cc/"><b>&#9758 Link</b></a>
-        </summary>
-            Abstract: January 21, 2022 <span id="icml_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("01/21/2022 19:59:59",function(msg){document.getElementById('icml_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: January 28, 2022 <span id="icml_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("01/28/2021 19:59:59",function(msg){document.getElementById('icml_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: May 15, 2021.<br/> 
-            Recent Acceptance Rate: 21.9%, 21.5%, 21.8% (2022-2020)
-        </details>
-    </li>
-    
-    <li>
-        <details class="details">
-            <summary> 
-            <span style="color: navy">Conference on Neural Information Processing Systems (NeurIPS 2022)</span>
-                <a href="https://nips.cc/"><b>&#9758 Link</b></a>
-            </summary>
-            Abstract: May 17, 2022 <span id="nips_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("05/17/2022 03:59:59",function(msg){document.getElementById('nips_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: May 20, 2022 <span id="nips_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("05/20/2022 03:59:59",function(msg){document.getElementById('nips_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: September 15, 2022.<br/>
-            Recent Acceptance Rate: 25.7%, 20.1%, 21.1% (2021-2019)
-        </details>
-    </li>
 
-    <a></a></ul>
-            
-    
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color:navy">International Conference on Machine Learning (ICML 2022)</span>
+                    <a href="https://icml.cc/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: January 21, 2022 <span id="icml_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("01/21/2022 19:59:59", function (msg) { document.getElementById('icml_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: January 28, 2022 <span id="icml_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("01/28/2021 19:59:59", function (msg) { document.getElementById('icml_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: May 15, 2021.<br />
+                Recent Acceptance Rate: 21.9%, 21.5%, 21.8% (2022-2020)
+            </details>
+        </li>
+
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">Conference on Neural Information Processing Systems (NeurIPS 2022)</span>
+                    <a href="https://nips.cc/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: May 17, 2022 <span id="nips_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("05/17/2022 03:59:59", function (msg) { document.getElementById('nips_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: May 20, 2022 <span id="nips_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("05/20/2022 03:59:59", function (msg) { document.getElementById('nips_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: September 15, 2022.<br />
+                Recent Acceptance Rate: 25.7%, 20.1%, 21.1% (2021-2019)
+            </details>
+        </li>
+
+        <a></a>
+    </ul>
+
+
     <h3>Data Mining and Information Retrieval Area</h3>
     <ul>
-    
-    <li>
-        <details class="details" open>
-            <summary>	
-            <span style="color: navy">International Conference on Data Mining (ICDM 2022)</span>
-                <a href="https://icdm22.cse.usf.edu/"><b>&#9758 Link</b></a>
-            </summary>
-            Full Paper: June 11, 2022 <span id="icdm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("06/11/2022 14:59:59",function(msg){document.getElementById('icdm_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: September 3, 2022.<br/> 
-            Recent Acceptance Rate: 9.9%, 9.8%, 9.1% (2021-2019)
-        </details>
-    </li>
 
-    <li>
-        <details class="details" open>
-            <summary> 
-            <span style="color: navy">International Conference on Web Search and Data Mining (WSDM 2023)</span>
-                <a href="https://www.wsdm-conference.org/2023/"><b>&#9758 Link</b></a>
-            </summary>
-            Full Paper: August 13, 2022 <span id="wsdm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("08/13/2022 17:59:59",function(msg){document.getElementById('wsdm_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: October 22, 2022.<br/> 
-            Recent Acceptance Rate: 15.8%, 18.6%, 14.8% (2022-2020)
-        </details>
-    </li>
-
-    <li>
-        <details class="details">
-        <summary> 
-            <span style="color: navy">The Web Conference (WWW 2022)</span>
-            <a href="http://www2022.thewebconf.org/"><b>&#9758 Link</b></a>
-        </summary>	
-            Abstract: October 15, 2021 <span id="www_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("10/15/2021 17:59:59",function(msg){document.getElementById('www_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: October 22, 2021 <span id="www_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("10/22/2021 17:59:59",function(msg){document.getElementById('www_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: January 14, 2022.<br/> 
-            Recent Acceptance Rate: 17.7%, 20.6%, 19.2% (2022-2020)
-        </details>
-    </li>
-
-    <li>
-        <details class="details">
-            <summary>
-            <span style="color: navy">SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2022)</span>
-                <a href="https://kdd.org/kdd2022/"><b>&#9758 Link</b></a>
-            </summary>	
-            Full Paper: February 11, 2022 <span id="kdd_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("02/11/2022 19:59:59",function(msg){document.getElementById('kdd_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: May 19, 2022.<br/> 
-            Recent Acceptance Rate: 14.9%, 15.4%, 16.8% (2022-2020)
-        </details>
-    </li>
-
-    <li>
-        <details class="details">
-            <summary> 
-            <span style="color: navy">SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2022)</span>
-                <a href="https://sigir.org/sigir2022/"><b>&#9758 Link</b></a>
-            </summary>
-            Abstract: January 22, 2022 <span id="ir_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("02/22/2022 19:59:59",function(msg){document.getElementById('ir_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: January 28, 2022 <span id="ir_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("02/28/2022 19:59:59",function(msg){document.getElementById('ir_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: April 1, 2022.<br/> 
-            Recent Acceptance Rate: 20.3%, 21.0%, 26.0% (2022-2020)
-        </details>
+        <li>
+            <details class="details" open>
+                <summary>
+                    <span style="color: navy">International Conference on Web Search and Data Mining (WSDM 2023)</span>
+                    <a href="https://www.wsdm-conference.org/2023/"><b>&#9758 Link</b></a>
+                </summary>
+                Full Paper: August 13, 2022 <span id="wsdm_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("08/13/2022 17:59:59", function (msg) { document.getElementById('wsdm_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: October 22, 2022.<br />
+                Recent Acceptance Rate: 15.8%, 18.6%, 14.8% (2022-2020)
+            </details>
         </li>
-    
-     <li>
-        <details class="details">
-            <summary>
-            <span style="color: navy">International Conference on Information and Knowledge Management (CIKM 2022)</span>
-                <a href="https://www.cikm2022.org/"><b>&#9758 Link</b></a>
-            </summary>	
-            Abstract: May 13, 2022 <span id="cikm_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-            <script type="text/javascript">	countDown("05/13/2022 17:59:59",function(msg){document.getElementById('cikm_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: May 20, 2022 <span id="cikm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("05/20/2022 17:59:59",function(msg){document.getElementById('cikm_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: August 2, 2022.<br/> 
-            Recent Acceptance Rate: 21.7%, 21.0%, 19.4% (2021-2019)
-        </details>
-    </li>
-    
-    <a></a></ul>
-    
-    
+
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">The Web Conference (WWW 2022)</span>
+                    <a href="http://www2022.thewebconf.org/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: October 15, 2021 <span id="www_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("10/15/2021 17:59:59", function (msg) { document.getElementById('www_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: October 22, 2021 <span id="www_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("10/22/2021 17:59:59", function (msg) { document.getElementById('www_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: January 14, 2022.<br />
+                Recent Acceptance Rate: 17.7%, 20.6%, 19.2% (2022-2020)
+            </details>
+        </li>
+
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2022)</span>
+                    <a href="https://kdd.org/kdd2022/"><b>&#9758 Link</b></a>
+                </summary>
+                Full Paper: February 11, 2022 <span id="kdd_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("02/11/2022 19:59:59", function (msg) { document.getElementById('kdd_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: May 19, 2022.<br />
+                Recent Acceptance Rate: 14.9%, 15.4%, 16.8% (2022-2020)
+            </details>
+        </li>
+
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">SIGIR Conference on Research and Development in Information Retrieval
+                        (SIGIR 2022)</span>
+                    <a href="https://sigir.org/sigir2022/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: January 22, 2022 <span id="ir_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("02/22/2022 19:59:59", function (msg) { document.getElementById('ir_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: January 28, 2022 <span id="ir_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("02/28/2022 19:59:59", function (msg) { document.getElementById('ir_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: April 1, 2022.<br />
+                Recent Acceptance Rate: 20.3%, 21.0%, 26.0% (2022-2020)
+            </details>
+        </li>
+
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">International Conference on Information and Knowledge Management (CIKM
+                        2022)</span>
+                    <a href="https://www.cikm2022.org/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: May 13, 2022 <span id="cikm_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("05/13/2022 17:59:59", function (msg) { document.getElementById('cikm_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: May 20, 2022 <span id="cikm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("05/20/2022 17:59:59", function (msg) { document.getElementById('cikm_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: August 2, 2022.<br />
+                Recent Acceptance Rate: 21.7%, 21.0%, 19.4% (2021-2019)
+            </details>
+        </li>
+
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">International Conference on Data Mining (ICDM 2022)</span>
+                    <a href="https://icdm22.cse.usf.edu/"><b>&#9758 Link</b></a>
+                </summary>
+                Full Paper: June 11, 2022 <span id="icdm_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("06/11/2022 14:59:59", function (msg) { document.getElementById('icdm_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: September 3, 2022.<br />
+                Recent Acceptance Rate: 9.9%, 9.8%, 9.1% (2021-2019)
+            </details>
+        </li>
+
+
+        <a></a>
+    </ul>
+
+
     <h3>Computer Vision Area</h3>
     <ul>
 
-    <li>
-        <details class="details">
-            <summary>
-            <span style="color: navy">European Conference on Computer Vision (ECCV 2020)</span>
-                <a href="https://eccv2020.eu/"><b>&#9758 Link</b></a>
-            </summary>	
-            Full Paper: March 6, 2020 <span id="eccv_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-            <script type="text/javascript">	countDown("03/05/2020 07:59:59",function(msg){document.getElementById('eccv_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: July 4, 2020.<br/> 
-            Recent Acceptance Rate: 27.1%, 31.8%, 26.6% (2020, 2018, 2016)
-        </details>
-    </li>
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">European Conference on Computer Vision (ECCV 2020)</span>
+                    <a href="https://eccv2020.eu/"><b>&#9758 Link</b></a>
+                </summary>
+                Full Paper: March 6, 2020 <span id="eccv_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("03/05/2020 07:59:59", function (msg) { document.getElementById('eccv_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: July 4, 2020.<br />
+                Recent Acceptance Rate: 27.1%, 31.8%, 26.6% (2020, 2018, 2016)
+            </details>
+        </li>
 
-    <li>
-        <details class="details">
-        <summary>
-            <span style="color: navy">Conference on Computer Vision and Pattern Recognition (CVPR 2022)</span>
-            <a href="http://cvpr2022.thecvf.com/"><b>&#9758 Link</b></a>
-        </summary>
-            Abstract: November 10, 2021 <span id="cvpr_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("11/10/2021 15:59:59",function(msg){document.getElementById('cvpr_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: November 19, 2021 <span id="cvpr_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("11/19/2021 15:59:59",function(msg){document.getElementById('cvpr_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: March 3, 2022.<br/> 
-            Recent Acceptance Rate: 25.3%, 23.7%, 22.1% (2022-2020)
-        </details>
-    </li>
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">Conference on Computer Vision and Pattern Recognition (CVPR 2022)</span>
+                    <a href="http://cvpr2022.thecvf.com/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: November 10, 2021 <span id="cvpr_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("11/10/2021 15:59:59", function (msg) { document.getElementById('cvpr_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: November 19, 2021 <span id="cvpr_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("11/19/2021 15:59:59", function (msg) { document.getElementById('cvpr_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: March 3, 2022.<br />
+                Recent Acceptance Rate: 25.3%, 23.7%, 22.1% (2022-2020)
+            </details>
+        </li>
 
-    <li>
-        <details class="details">
-        <summary>
-            <span style="color: navy">International Conference on Multimedia (MM 2022)</span>
-            <a href="https://2022.acmmm.org/"><b>&#9758 Link</b></a>
-        </summary>
-            Abstract: April 1, 2022 <span id="mm_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("04/01/2022 19:59:59",function(msg){document.getElementById('mm_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: April 12, 2022 <span id="mm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("04/12/2022 19:59:59",function(msg){document.getElementById('mm_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: June 30, 2022.<br/> 
-            Recent Acceptance Rate: 27.9%, 27.9%, 26.5% (2021-2019)
-        </details>
-    </li> 
-    
-    <li>
-        <details class="details">
-            <summary>
-            <span style="color: navy">International Conference on Computer Vision (ICCV 2021)</span>
-                <a href="http://iccv2021.thecvf.com/home"><b>&#9758 Link</b></a>
-            </summary>
-            Abstract: March 11, 2021 <span id="iccv_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("03/11/2021 15:59:59",function(msg){document.getElementById('iccv_abstract_dt').innerHTML = msg;}); </script><br/>
-            Full Paper: March 18, 2021 <span id="iccv_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("03/18/2021 15:59:59",function(msg){document.getElementById('iccv_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: July 23, 2021.<br/> 
-            Recent Acceptance Rate: 25.0%, 29.0%, 30.9% (2019, 2017, 2015)
-        </details>
-    </li>
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">International Conference on Multimedia (MM 2022)</span>
+                    <a href="https://2022.acmmm.org/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: April 1, 2022 <span id="mm_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("04/01/2022 19:59:59", function (msg) { document.getElementById('mm_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: April 12, 2022 <span id="mm_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("04/12/2022 19:59:59", function (msg) { document.getElementById('mm_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: June 30, 2022.<br />
+                Recent Acceptance Rate: 27.9%, 27.9%, 26.5% (2021-2019)
+            </details>
+        </li>
 
-    <a></a></ul>
-    
-    
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">International Conference on Computer Vision (ICCV 2021)</span>
+                    <a href="http://iccv2021.thecvf.com/home"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: March 11, 2021 <span id="iccv_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("03/11/2021 15:59:59", function (msg) { document.getElementById('iccv_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: March 18, 2021 <span id="iccv_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("03/18/2021 15:59:59", function (msg) { document.getElementById('iccv_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: July 23, 2021.<br />
+                Recent Acceptance Rate: 25.0%, 29.0%, 30.9% (2019, 2017, 2015)
+            </details>
+        </li>
+
+        <a></a>
+    </ul>
+
+
     <h3>Natural Language Processing Area</h3>
     <ul>
-    
-    <li>
-        <details class="details" open>
-        <summary>
-            <span style="color: navy">Conference on Empirical Methods in Natural Language Processing (EMNLP 2022)</span>
-                <a href="https://2022.emnlp.org/"><b>&#9758 Link</b></a>
-        </summary>
-        Abstract: June 18, 2022 <span id="emnlp_abstract_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("06/18/2022 19:59:59",function(msg){document.getElementById('emnlp_abstract_dt').innerHTML = msg;}); </script><br/>
-        Full Paper: June 25, 2022 <span id="emnlp_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("06/25/2022 19:59:59",function(msg){document.getElementById('emnlp_full_dt').innerHTML = msg;}); </script><br/>
-        Notifications: October 17, 2022.<br/>
-        Recent Acceptance Rate: 25.6%, 24.5%, 22.4% (2021-2019)
-        </details>
-    </li>
 
-    <li>
-        <details class="details">
-        <summary>
-            <span style="color: navy">Annual Meeting of the Association for Computational Linguistics (ACL 2022)</span>
-                <a href="https://www.2022.aclweb.org/"><b>&#9758 Link</b></a>
-        </summary>
-            Full Paper: November 16, 2021 <span id="acl_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("11/16/2021 19:59:59",function(msg){document.getElementById('acl_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: February 24, 2022.<br/> 
-            Recent Acceptance Rate: 25.4%, 25.7%, 25.3% (2020-2018)
-        </details>
-    </li>
+        <li>
+            <details class="details" open>
+                <summary>
+                    <span style="color: navy">Conference on Empirical Methods in Natural Language Processing (EMNLP
+                        2022)</span>
+                    <a href="https://2022.emnlp.org/"><b>&#9758 Link</b></a>
+                </summary>
+                Abstract: June 18, 2022 <span id="emnlp_abstract_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("06/18/2022 19:59:59", function (msg) { document.getElementById('emnlp_abstract_dt').innerHTML = msg; }); </script>
+                <br />
+                Full Paper: June 25, 2022 <span id="emnlp_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("06/25/2022 19:59:59", function (msg) { document.getElementById('emnlp_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: October 17, 2022.<br />
+                Recent Acceptance Rate: 25.6%, 24.5%, 22.4% (2021-2019)
+            </details>
+        </li>
 
-    <li>
-        <details class="details">
-        <summary>
-            <span style="color: navy">Annual Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2022)</span>
-                <a href="https://2022.naacl.org/"><b>&#9758 Link</b></a>
-        </summary>
-            Full Paper: January 16, 2022 <span id="naacl_full_dt" style="color:#A22900" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("01/16/2022 19:59:59",function(msg){document.getElementById('naacl_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: April 12, 2022.<br/> 
-            Recent Acceptance Rate: 29.2%, 26.0%, 26.3% (2021-2019)
-        </details>
-    </li>
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">Annual Meeting of the Association for Computational Linguistics (ACL
+                        2022)</span>
+                    <a href="https://www.2022.aclweb.org/"><b>&#9758 Link</b></a>
+                </summary>
+                Full Paper: November 16, 2021 <span id="acl_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("11/16/2021 19:59:59", function (msg) { document.getElementById('acl_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: February 24, 2022.<br />
+                Recent Acceptance Rate: 25.4%, 25.7%, 25.3% (2020-2018)
+            </details>
+        </li>
 
-    <li>
-        <details class="details">
-        <summary>
-            <span style="color: navy">International Conference on Computational Linguistics (COLING 2022)</span>
-                <a href="https://coling2022.org/"><b>&#9758 Link</b></a>
-        </summary>
-            Full Paper: May 18, 2022 <span id="coling_full_dt" style="color:rgb(162, 41, 0)" mce_style="color:#A22900"></span>
-                <script type="text/javascript">	countDown("05/18/2022 19:59:59",function(msg){document.getElementById('coling_full_dt').innerHTML = msg;}); </script><br/>
-            Notifications: August 16, 2022.<br/> 
-            Recent Acceptance Rate: 33.4%, 37.4%, 32.4% (2020, 2018, 2016)
-        </details>
-    </li>
-    
-    <a></a></ul>
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">Annual Conference of the North American Chapter of the Association for
+                        Computational Linguistics (NAACL 2022)</span>
+                    <a href="https://2022.naacl.org/"><b>&#9758 Link</b></a>
+                </summary>
+                Full Paper: January 16, 2022 <span id="naacl_full_dt" style="color:#A22900"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("01/16/2022 19:59:59", function (msg) { document.getElementById('naacl_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: April 12, 2022.<br />
+                Recent Acceptance Rate: 29.2%, 26.0%, 26.3% (2021-2019)
+            </details>
+        </li>
 
-    
+        <li>
+            <details class="details">
+                <summary>
+                    <span style="color: navy">International Conference on Computational Linguistics (COLING 2022)</span>
+                    <a href="https://coling2022.org/"><b>&#9758 Link</b></a>
+                </summary>
+                Full Paper: May 18, 2022 <span id="coling_full_dt" style="color:rgb(162, 41, 0)"
+                    mce_style="color:#A22900"></span>
+                <script
+                    type="text/javascript">	countDown("05/18/2022 19:59:59", function (msg) { document.getElementById('coling_full_dt').innerHTML = msg; }); </script>
+                <br />
+                Notifications: August 16, 2022.<br />
+                Recent Acceptance Rate: 33.4%, 37.4%, 32.4% (2020, 2018, 2016)
+            </details>
+        </li>
+
+        <a></a>
+    </ul>
+
+
     <h3>Acknowledgement</h3>
     <table style="width:100%" cellspacing="20" valign="top">
         <tr>
-        <td><img src="./images/coffee.jpg" border="0" width="220"></td>
-        <td valign="top" align='left'>
-        <span><center><b>If you find it useful, consider buying Jerry a coffee via Wechat :) (Thanks BOSS !!!)</b></center></span>
-        Jiarui thanks <a href="https://aideadlin.es/?sub=NLP,ML,RO,SP,CV,DM">Abhishek Das</a> and <a href="https://github.com/lixin4ever/Conference-Acceptance-Rate?utm_source=wechat_session&utm_medium=social&utm_oi=698628813000548352">Xin Li</a> for userful Information.<br>
-        Anyone who has any suggestion or wants to support this website together is more than welcome. Please feel free to contact <a href="https://jinjiarui.github.io/">Jiarui</a> (Email: jinjiarui97 [AT] gmail.com).
-        </td>
+            <td><img src="./images/coffee.jpg" border="0" width="110"></td>
+            <td valign="top" align='left'>
+                <span>
+                    <p></p>
+                    <center><b>If you find it useful, consider buying Jerry a coffee via Wechat :) (Thanks BOSS !!!)</b>
+                    </center>
+                </span>
+                Jiarui thanks <a href="https://aideadlin.es/?sub=NLP,ML,RO,SP,CV,DM">Abhishek Das</a> and <a
+                    href="https://github.com/lixin4ever/Conference-Acceptance-Rate?utm_source=wechat_session&utm_medium=social&utm_oi=698628813000548352">Xin
+                    Li</a> for userful Information.<br>
+                Anyone who has any suggestion or wants to support this website together is more than welcome. Please
+                feel free to contact <a href="https://jinjiarui.github.io/">Jiarui</a> (Email: jinjiarui97@sjtu.edu.cn).
+            </td>
     </table>
-    
-    
+
+
     <div id="footer">
         <div id="footer-text"></div>
     </div>
-    </a></div><a>
-    
-    
-    </a></body></html>
+    </a>
+</div><a>
+
+
+</a></body>
+
+</html>
 </div>

@@ -30,13 +30,14 @@ misc: passive
                         <font color="red">[🏆 AWS
                             Machine Learning Research Project Award]</font>
                     </a>
-                </b>
+                </b></p>
+
                 In order to bridge between symbolic semantics and subgraph topology, we propose <a
                     href="../paper.html">ANalogy subGraph
                     Embedding Learning (GraphANGEL)</a> to make prediction of each node pair based on the subgraphs
                 containing the pair, as well as other (analogy) subgraphs with the same graph patterns.
                 <a href="../paper.html">[ICLR 2022a]</a>
-                These researches are supported by <a href="https://www.dgl.ai/">Deep Graph Library Team</a>.
+                <!-- These researches are supported by <a href="https://www.dgl.ai/">Deep Graph Library Team</a>. -->
                 </a>
             </td>
         </tr>
@@ -48,7 +49,7 @@ misc: passive
         <tr>
             <td>
                 <a class='title' href="../paper.html"><b>Simple Enhancements on
-                        Graph Neural Networks for Node and Edge Predictions</b></a> <a href="../paper.html"><b>(&#9758
+                        Graph Neural Networks for Predictions</b></a> <a href="../paper.html"><b>(&#9758
                         Slide)</b></a><br />
                 Graph neural networks and label propagation represent two interrelated modeling strategies designed to
                 exploit graph structure. We propose a <a href="../paper.html">Label Trick</a> to accommodate the
@@ -62,15 +63,16 @@ misc: passive
                 </b> It is foundational to many of the top-ranking submissions
                 on the <a href="../paper.html">Open Graph Benchmark leaderboard</a>. We further theoretically show that
                 under certain simplifying assumptions, the stochastic label trick can be reduced to an interpretable,
-                deterministic training objective. <a href="../paper.html">[ICLR 2022b]</a> These researches are
-                supported by <a href="https://www.dgl.ai/">Deep Graph Library Team</a>.
+                deterministic training objective. <a href="../paper.html">[ICLR 2022b]</a>
+                <!-- These researches are
+                supported by <a href="https://www.dgl.ai/">Deep Graph Library Team</a>. -->
                 </a>
             </td>
         </tr>
     </table>
 </div>
 
-<div class="cell">
+<!-- <div class="cell">
     <table>
         <tr>
             <td>
@@ -87,7 +89,7 @@ misc: passive
             </td>
         </tr>
     </table>
-</div>
+</div> -->
 
 <h3>SEQUENCE STRUCTURED DATA MINING</h3>
 
@@ -97,60 +99,89 @@ misc: passive
             <td>
                 <a class='title' href="../paper.html"><b>New Sequential Neural Network
                         Architectures</b></a> <a href="./files/ultr_ali.pdf"><b>(&#9758 Slide)</b></a><br />
-                Implicit feedback (e.g., user clicks) is an important source of data for modern search engines.
-                While heavily biased, it is cheap to collect and particularly useful for user-centric retrieval
-                applications. To develop an unbiased ranker with biased feedback,
-                we propose <a href="../paper.html">Deep Recurrent Survival Ranking (DRSR)</a> that incorporates survival
-                analysis techniques with recurrent neural network to derive user feedbacks at each position. <a
-                    href="https://arxiv.org/pdf/2004.14714.pdf">[SIGIR 2020a]</a>
-                This research is supported by <a href="./files/ali.pdf">Alibaba Innovative Research Program</a>.
+                Implicit feedback (e.g., user clicks) is an important source of data for modern search engines but
+                heavily biased.
+                <!-- While heavily biased, it is cheap to collect and particularly useful for user-centric retrieval
+                applications.  -->
+                <!-- To develop an unbiased ranker with biased feedback, -->
+                We propose <a href="../paper.html">Deep Recurrent Survival Ranking (DRSR)</a> that incorporates survival
+                analysis techniques with recurrent neural network to derive unbiased estimations of user feedbacks. <a
+                    href="https://arxiv.org/pdf/2004.14714.pdf">[SIGIR 2020a]</a></p>
+                <!-- This research is supported by <a href="./files/ali.pdf">Alibaba Innovative Research Program</a>. -->
                 As users’ demands are not only conditioned by their profile but also by their recent browsing behaviors
                 as well as periodical purchases made some time ago, we propose <a href="../paper.html">Search-based
                     Time-Aware Recommendation (STARec)</a> which captures the evolving demands of users over
-                time through a unified search-based time-aware model.
-                This research is supported by <a href="../paper.html">China Merchants Bank</a>, and has been
+                time through a unified search-based time-aware model. <a href="../paper.html">[WWW 2022a]</a></p>
+                <!-- This research is supported by <a href="../paper.html">China Merchants Bank</a>, and has been
                 successfully deployed at <a href="../paper.html">China Merchants Bank App</a>.
-                <a href="../paper.html">[WWW 2022a]</a>
-                <b>
+                <a href="../paper.html">[WWW 2022a]</a> -->
+                <!-- <b>
                     <a href="../paper.html">
                         <font color="red">[🔌 Real-world Deployment]</font>
                     </a>
-                </b>
-                </a>
-            </td>
-        </tr>
-    </table>
-</div>
-
-<div class="cell">
-    <table>
-        <tr>
-            <td>
-                <a class='title' href="https://arxiv.org/pdf/2004.14714.pdf"><b>Applications of Sequential Models on
-                        E-Commerce</b></a> <a href="./files/ultr_ali.pdf"><b>(&#9758 Slide)</b></a><br />
+                </b> -->
                 With the prevalence of live broadcast business nowadays, live broadcast recommendation, is widely used
                 in many mobile e-commerce Apps. We propose <a href="../paper.html">TWo-side Interactive NetworkS
                     (TWINS)</a> to fully mine the interactive patterns of both static and dynamic information on user
-                and anchor sides. <a href="../paper.html">[WWW 2022b]</a>
-                This research is supported by <a href="./files/ali.pdf">Alibaba Innovative Research Program</a>,
-                and has been successfully deployed at <a href="../paper.html">Taobao Live App</a>. <b>
-                    <a href="../paper.html">
-                        <font color="red">[🔌 Real-world Deployment]</font>
-                    </a>
-                </b>
+                and anchor sides, which is the first work for live broadcast recommendation to our knowledge. <a
+                    href="../paper.html">[WWW 2022b]</a>
                 </a>
             </td>
         </tr>
     </table>
 </div>
 
-<h3>UNSTRUCTURED DATA MINING</h3>
 <div class="cell">
     <table>
         <tr>
             <td>
-                <a class='title' href="https://dl.acm.org/doi/pdf/10.1145/3357384.3357978"><b>Learning and Planning on
-                        Unstructured Data</b></a> <a href="./files/hrl_didi.pdf"><b>(&#9758 Slide)</b></a><br />
+                <a class='title' href="https://arxiv.org/pdf/2004.14714.pdf"><b>Simple Enhancements on
+                        Recurrent Neural Networks for Predictions</b></a> <a href="./files/ultr_ali.pdf"><b>(&#9758
+                        Slide)</b></a><br />
+                Despite elaborate architecture design, we reveal that incorporation of user feedbacks (especially
+                feedbacks on previous item) as ranking features can significant improve the recommendation performance.
+                <a href="../paper.html">[WWW 2022a]</a>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<h3>APPLICATIONS OF STRUCTURED AND UNSTRUCTURED DATA MINING</h3>
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+                <a class='title' href="https://dl.acm.org/doi/pdf/10.1145/3357384.3357978"><b>Sequential Recommendation
+                        Algorithms
+                        on E-Commerce Platform</b></a> <a href="./files/hrl_didi.pdf"><b>(&#9758 Slide)</b></a><br />
+                Our proposed algorithms <a href="../paper.html"> STARec</a> and <a href="../paper.html"> TWINS</a>
+                have been successfully deployed at <a href="../paper.html">China Merchants Bank</a> and <a
+                    href="../paper.html">Taobao Diantao App</a>. <a href="../paper.html">[WWW 2022a]</a> <b><a
+                        href="../paper.html">
+                        <font color="red">[🔌 Real-world Deployment]</font></b>
+                </a> <a href="../paper.html">[WWW 2022b]</a> <a href="../paper.html">
+                    <b>
+                        <font color="red">[🔌 Real-world Deployment]</font>
+                </a></b>
+                <!-- As users’ demands are not only conditioned by their profile but also by their previous browsing
+                behaviors, we propose <a href="../paper.html">User Behavior Retrieval (UBR)</a> to incorporate users'
+                related historical records to make predictions. <a href="../paper.html">[SIGIR
+                    2020b]</a> -->
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+                <a class='title' href="https://dl.acm.org/doi/pdf/10.1145/3357384.3357978"><b>Learning and Planning
+                        Algorithms
+                        on Ride-Hailing Platform</b></a> <a href="./files/hrl_didi.pdf"><b>(&#9758 Slide)</b></a><br />
                 In a general view, there are two major decision-making tasks for such ride-hailing platforms, namely
                 order dispatching and fleet management.
                 Most of the previous work deals with either order dispatching or fleet management without regarding the
@@ -163,40 +194,52 @@ misc: passive
                         <font color="red">[🏆 Gaia Young Scholar Outstanding Project
                             Award]</font>
                     </a></b>
-                As users’ demands are not only conditioned by their profile but also by their previous browsing
+                <!-- As users’ demands are not only conditioned by their profile but also by their previous browsing
                 behaviors, we propose <a href="../paper.html">User Behavior Retrieval (UBR)</a> to incorporate users'
                 related historical records to make predictions. <a href="../paper.html">[SIGIR
-                    2020b]</a>
+                    2020b]</a> -->
                 </a>
             </td>
         </tr>
     </table>
 </div>
 
-<h3>GAME</h3>
+
+<h3>OPEN-SOURCE TOOLKITS AND GAMES</h3>
+
+<div class="cell">
+    <a class='title' href="https://github.com/Jinjiarui/AwesomeStructure"><b>A Toolkit for Mining Data in a Structural
+            Fashion </a> <a href="https://github.com/Jinjiarui/AwesomeStructure">(&#9758 Code)</a></b><br />
+    We collect the key insights of the proposed models and design the corresponding plug-in modules. We further
+    incorporate the proposed trade-of-the-tricks in the repository. It is an on-going project, anyone who wants to
+    contribute to this project is more than welcome. Please feel free to contact <a
+        href="https://jinjiarui.github.io/">Jiarui</a> (Email: jinjiarui97@sjtu.edu.cn).
+    </a>
+</div>
 
 <div class="cell">
     <table>
         <tr>
             <td>
-                <a class='title' href="https://github.com/MonomorphismTeam/Monomorphism"><b>Personal Computer
-                        Game</b></a> <a href="../game/"><b>(&#9758 Code)</b></a><br />
-                Be a Hero. Let's go through this level game on <a
-                    href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a>.
-                My team (as the Team Leader, cooperated with <a href="https://airguanz.github.io/">Zhuang Guan</a> and
-                <a href="https://github.com/Chouphone">Chufeng Tan</a>) build an operational game in C++ without any
-                engine (over <b>10,000</b> lines).</a>
+                <a class='title' href="https://github.com/MonomorphismTeam/Monomorphism"><b>Simple
+                        Computer Game <a href="../game/">(&#9758 Code)</a> <a href="../game/">and Website Game <a
+                                href="../game/">(&#9758
+                                Website)</a></b> <br />
+                    My team (as the Team Leader, cooperated with <a href="https://airguanz.github.io/">Zhuang Guan</a>
+                    and
+                    <a href="https://github.com/Chouphone">Chufeng Tan</a>) build an operational
+                    game in C++ without any engine (over <b>10,000</b> lines) on <a
+                        href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a>.
+                    Be a Hero!</p>
+
+                    Inspired by <a href="https://mitchgu.github.io/GetMIT/">Get MIT</a>, we develop <a
+                        href="http://gabrielecirulli.com" target="_blank">2048 game</a> <a href="../game/">Here</a>.
+                    Use your arrow keys to move the tiles. When two tiles with the same college touch, they merge
+                    into one!
+                    NOTE: The order of colleges is not intended to be a ranking, but a rough north-to-south
+                    geographical path to <a href="http://en.sjtu.edu.cn">SJTU</a>.
+                </a>
             </td>
         </tr>
     </table>
-</div>
-<div class="cell">
-    <a class='title' href="../game/"><b>Website Game</b></a> <a href="../game/"><b>(&#9758
-            Website)</b></a><br />
-    Inspired by <a href="https://mitchgu.github.io/GetMIT/">Get MIT</a>, we develop <a href="http://gabrielecirulli.com"
-        target="_blank">2048 game</a> <a href="../game/">Here</a>.
-    Use your arrow keys to move the tiles. When two tiles with the same college touch, they merge into one!
-    NOTE: The order of colleges is not intended to be a ranking, but a rough north-to-south geographical path to <a
-        href="http://en.sjtu.edu.cn">SJTU</a>.
-    </a>
 </div>
