@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Jiarui Jin - Homepage</title>
-    <link rel="icon" type="images/png" href="http://jiaruijin.com/images/icon.png">
+    <link rel="icon" type="images/png" href="../images/icon.png">
     <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet"/>
     <link href="css/bootstrap/css/bootstrap-theme.css" rel="stylesheet"/>
     <head>
@@ -73,6 +73,8 @@
 			<li class="passive"><a href="/publication" title="publication">publication</a></li>
 			<li class="active"><a href="/project" title="Project">PROJECT</a></li>
 			<li class=""><a href="/deadline" title="Deadline">Deadline</a></li>
+			<li class=""><a href="/gundam" title="Gundam">GUNDAM</a></li>
+			<li class=""><a href="/core" title="Core">CORE</a></li>
 		</ul>
 	</div>
 </div>
@@ -106,9 +108,8 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="../paper.html"><b>New Graph Neural Network
-                        Architectures</b></a> <a href="../paper.html"><b>(&#9758
-                        Slide)</b></a><br />
+                <a class='title' href="../project/index.html"><b>New Graph Neural Network
+                        Architectures</b></a> <br/>
                 Due to the complex structures and large scales, it is hard to make predictions directly, thus the
                 existing approaches turn to compress the meticulous structures into only two nodes with one edge,
                 which may bring in noise and suffer from data sparsity.
@@ -142,11 +143,10 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="../paper.html"><b>Simple Enhancements on
-                        Graph Neural Networks for Predictions</b></a> <a href="../paper.html"><b>(&#9758
-                        Slide)</b></a><br />
+                <a class='title' href="../project/index.html"><b>Simple Enhancements on
+                        Graph Neural Networks for Predictions</b></a><br/>
                 Graph neural networks and label propagation represent two interrelated modeling strategies designed to
-                exploit graph structure. We propose a <a href="../paper.html">Label Trick</a> to accommodate the
+                exploit graph structure. We propose a <a href="https://arxiv.org/pdf/2103.13355.pdf">Label Trick</a> to accommodate the
                 parallel use of features and labels, which uses a randomly-selected portion of the training labels as
                 model inputs, concatenated with the original node features for making predictions on the remaining
                 labels. <a href="https://arxiv.org/pdf/2103.13355.pdf">[DLG-KDD 2021]</a>
@@ -192,8 +192,8 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="../paper.html"><b>New Sequential Neural Network
-                        Architectures</b></a> <a href="../paper.html"><b>(&#9758 Slide)</b></a><br />
+                <a class='title' href="../project/index.html"><b>New Sequential Neural Network
+                        Architectures</b></a><br/>
                 Implicit feedback (e.g., user clicks) is an important source of data for modern search engines but
                 heavily biased.
                 <!-- While heavily biased, it is cheap to collect and particularly useful for user-centric retrieval
@@ -228,7 +228,13 @@
                 <a href="https://arxiv.org/pdf/2208.01889.pdf">Hierarchical rEcurrent Ranking On the Entire Space (HEROES)</a>
                 which incorporates the contextual information to estimate these behaviors in a multi-scale fashion. <a
                 href="https://arxiv.org/pdf/2208.01889.pdf">[CIKM 2022]</a></p>
-                </a>
+
+                Notice that Probabilistic Ranking Principle (PRP) would neglect the contextual dependence among
+                the candidate items, and make the whole pipeline non-differentiable due to the sort operation.
+                We propose <a href="../paper.html">Set-To-Arrangement Ranking (STARank)</a> to directly generate the
+                permutations of the set of candidate items in the context of the user browsed items without the sort operation.
+                <a
+                href="../paper.html">[WWW 2023a]</a></p>
             </td>
         </tr>
     </table>
@@ -238,13 +244,18 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="../paper.html"><b>Simple Enhancements on
-                        Recurrent Neural Networks for Predictions</b></a> <a href="../paper.html"><b>(&#9758
-                        Slide)</b></a><br />
+                <a class='title' href="../project/index.html"><b>Simple Enhancements on
+                        Recurrent Neural Networks for Predictions</b></a><br/>
                 Despite elaborate architecture design, we reveal that incorporation of user feedbacks (especially
                 feedbacks on previous item) as ranking features can significant improve the recommendation performance.
                 <a href="https://arxiv.org/pdf/2202.03097.pdf">[WWW 2022a]</a>
-                </a>
+                </p>
+
+                We propose a simple yet sufficient unbiased learning-to-rank paradigm named <a href="../paper.html">InfoRank</a> that can simultaneously mitigate 
+                the effects of both position and popularity biases by summarizing the impacts of those biases into a single observation factor, 
+                therefore providing a unified treatment of the bias problem. 
+                <a
+                href="../paper.html">[WWW 2023b]</a></p>
             </td>
         </tr>
     </table>
@@ -256,9 +267,9 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="../paper.html"><b>Sequential Recommendation
+                <a class='title' href="../project/index.html"><b>Sequential Recommendation
                         Algorithms
-                        on E-Commerce Platform</b></a> <a href="../paper.html"><b>(&#9758 Slide)</b></a><br />
+                        on E-Commerce Platform</b></a><br/>
                 Our proposed algorithms <a href="https://arxiv.org/pdf/2202.03097.pdf"> STARec</a> and <a
                     href="https://arxiv.org/pdf/2202.04333.pdf"> TWINS</a>
                 have been successfully deployed at <a href="http://www.cmbchina.com/">China Merchants Bank</a> and <a
@@ -285,9 +296,7 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="../paper.html"><b>Learning and Planning
-                        Algorithms
-                        on Ride-Hailing Platform</b></a> <a href="../paper.html"><b>(&#9758 Slide)</b></a><br />
+                <a class='title' href="../paper.html"><b>Learning and Planning Algorithms on Ride-Hailing Platform</b></a><br/>
                 In a general view, there are two major decision-making tasks for such ride-hailing platforms, namely
                 order dispatching and fleet management.
                 Most of the previous work deals with either order dispatching or fleet management without regarding the
@@ -312,15 +321,15 @@
 </div>
 
 
-<h3>OPEN-SOURCE TOOLKITS AND GAMES</h3>
+<h3>TOOLKITS AND SYSTEMS</h3>
 
 <div class="cell">
-    <a class='title' href="https://github.com/Jinjiarui/AwesomeStructure"><b>A Toolkit for Mining Data in a Structural
-            Fashion </a> <a href="https://github.com/Jinjiarui/AwesomeStructure">(&#9758 Code)</a></b><br />
+    <a class='title' href="../project/index.html"><b>A Toolkit for Mining Data in a Structural
+            Fashion</a></b><br />
     We collect the key insights of the proposed models and design the corresponding plug-in modules. We further
-    incorporate the proposed trade-of-the-tricks in the repository. It is an on-going project, anyone who wants to
+    incorporate the proposed trade-of-the-tricks in the repository <a href="https://github.com/Jinjiarui/AwesomeStructure">(&#9758 Code)</a>. It is an on-going project, anyone who wants to
     contribute to this project is more than welcome. Please feel free to contact <a
-        href="https://jinjiarui.github.io/">Jiarui</a> (Email: jinjiarui97@sjtu.edu.cn).
+        href="../index.html">Jiarui</a> (Email: jinjiarui97@gmail.com).
     </a>
 </div>
 
@@ -328,19 +337,17 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="https://github.com/MonomorphismTeam/Monomorphism"><b>Simple
-                        Computer Game <a href="../game/">(&#9758 Code)</a> <a href="../game/">and Website Game <a
-                                href="../game/">(&#9758
-                                Website)</a></b> <br />
+                <a class='title' href="../project/index.html"><b>Simple
+                        Computer Game and Website Game</a></b> <br/>
                     My team (as the Team Leader, cooperated with <a href="https://airguanz.github.io/">Zhuang Guan</a>
                     and
                     <a href="https://github.com/Chouphone">Chufeng Tan</a>) build an operational
-                    game in C++ without any engine (over <b>10,000</b> lines) on <a
+                    game <a href="https://github.com/MonomorphismTeam/Monomorphism">(&#9758 Code)</a> in C++ without any engine (over <b>10,000</b> lines) on <a
                         href="https://en.wikipedia.org/wiki/Microsoft_Windows">Windows</a>.
                     Be a Hero!</p>
 
                     Inspired by <a href="https://mitchgu.github.io/GetMIT/">Get MIT</a>, we develop <a
-                        href="http://gabrielecirulli.com" target="_blank">2048 game</a> <a href="../game/">Here</a>.
+                        href="http://gabrielecirulli.com" target="_blank">2048 game</a> <a href="../game/">(&#9758 Game)</a>.
                     Use your arrow keys to move the tiles. When two tiles with the same college touch, they merge
                     into one!
                     NOTE: The order of colleges is not intended to be a ranking, but a rough north-to-south
