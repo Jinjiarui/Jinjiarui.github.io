@@ -243,6 +243,5 @@ sympy-plots-for-*.tex/
 *.DS_Store
 /data/
 /out/
-*.pdf
 *.pem
 .DS_Store
