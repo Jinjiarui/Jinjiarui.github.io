@@ -103,17 +103,22 @@
 				</div>
 				<div class="col-sm-11 post" >
 					<article style="margin-right:10%">
-						<h3>LARGE LANGUAGE MODEL ENPOWERED DATA MANAGEMENT</h3>
+						<h3>LARGE LANGUAGE MODEL ENPOWERED INFORMATION MANAGEMENT AND RETRIEVAL</h3>
 <div class="cell">
     <table>
         <tr>
             <td>
                 <a class='title' href="../project/index.html"><b>Large Language Models are Text Renders</b></a> <br/>
                 In order to lend interaction wings to recommender systems that are trained on offline historical user behaviors, 
-                we propose <a href="/core/index.html">CORE</a> to bridge COnversational agent and REcommender systems via an unified uncertainty minimization framework.
+                we propose <a href="/core/index.html">COnversational agents and REcommender systems (CORE)</a> to bridge conversational agents and recommender systems via an unified uncertainty minimization framework.
                 It can allow any recommendation platform to online query user preference with a plug-and-play conversational agent.
                 In this use case, large language models act as renders to enable our conversational agent communicate as a human. 
-                <a href="../preprints/CORE.pdf">[Preprint 2023]</a>
+                <a href="../preprints/CORE.pdf">[PREPRINT 2023a]</a></p>
+
+                We propose <a href="../preprints/MAGUS.pdf">Multi-round Auto Guess-and-Update System (MAGUS)</a> organizing a multi-round guess-and-update 
+                system that can be applied to any recommender system to allow the recommendation of both queries and items.
+                In this regard, MAGUS can be regarded as a simplified version of free-text conversational agents. 
+                <a href="../preprints/MAGUS.pdf">[PREPRINT 2023b]</a></p>
                 </a>
             </td>
         </tr>
@@ -125,13 +130,125 @@
         <tr>
             <td>
                 <a class='title' href="../project/index.html"><b>Large Language Models are Data Filters</b></a> <br/>
-                Notice that large language models are capable to memorize knowledge and hold chain of throughs.
+                We notice that large language models are capable to memorize knowledge and hold chain of throughs.
                 We propose <a href="/gundam/index.html">Golden plUg-iN DAta Manager (GUNDAM)</a>, a novel framework that measures sufficiency and necessity of
                 plugging-in demonstrations conditioned on a specific large language models.
                 In this use case, large language models perform as filters to extract high-quality plug-in data, which can be further used for 
                 both unsupervised learning setting (a.k.a., few-shot inference) and supervisied learning setting (a.k.a., fine-tuning).
-                <a href="../preprints/GUNDAM.pdf">[Preprint 2023]</a>
+                <a href="../preprints/GUNDAM.pdf">[PREPRINT 2023c]</a>
                 </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<h3>SEQUENCE STRUCTURED DATA MINING</h3>
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+                <a class='title' href="../project/index.html"><b>Mining Interactive Patterns on Sequences for Recommendations</b></a><br/>
+                We define "interactive patterns" as "AND" (e.g., if a user is Chinese AND the date is Chinese New Year, then she is likely to buy dumplings).
+                We propose <a
+                href="https://arxiv.org/pdf/2007.00216.pdf">Heterogeneous INteract and aggreGatE (GraphHINGE)</a>.
+                In GraphHINGE, we uese the predefined metapaths to sample the sequences of users and items.
+                We design a convolutional block with fast Fourier transform to get interactions before aggregating the representations to final predcition scores for item recommendations.
+                <a href="https://arxiv.org/pdf/2007.00216.pdf">[KDD 2020]</a>
+                <a href="https://arxiv.org/pdf/2011.12683.pdf">[TOIS 2021]</a>
+                <b>
+                <a
+                    href="https://www.amazon.science/research-awards/program-updates/aws-machine-learning-research-awards-recipients-announced">
+                    <font color="red">[🏆 AWS
+                        Machine Learning Research Project Award]</font>
+                </a>
+                </b></p>
+                
+                
+                With the prevalence of live broadcast business nowadays, live broadcast recommendation, is widely used
+                in many mobile e-commerce Apps. 
+                We propose <a href="https://arxiv.org/pdf/2202.04333.pdf">TWo-side Interactive NetworkS
+                    (TWINS)</a> to fully mine the interactive patterns of both static and dynamic information on user
+                and anchor sides, which is the first work for live broadcast recommendation to our knowledge. 
+                TWINS is verified by online A/B tests and has been deployed on <a href="https://taolive.taobao.com/">Diantao anchor recommendation platform</a>.
+                <a
+                    href="https://arxiv.org/pdf/2202.04333.pdf">[WWW 2022a]</a>
+                    <b>
+                        <a href="https://arxiv.org/pdf/2202.04333.pdf">
+                            <font color="red">[🔌 Real-world Deployment]</font>
+                        </a>
+                    </b></p>
+                
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+                <a class='title' href="../project/index.html"><b>Mining Relevant Patterns on Sequences for Recommendations</b></a><br/>
+                We define "relevant patterns" by the browsed items relevant to the items to predict.
+                We propose <a href="https://arxiv.org/pdf/2202.03097.pdf">Search-based Time-Aware Recommendation (STARec)</a> which captures the evolving demands of users over
+                time through a unified search-based time-aware model. 
+                STARec can be simply deployed into any sequential network to scaling up it to handle long sequence data.
+                STARec is verified by online A/B tests and has been
+                successfully deployed on <a href="https://www.cmbchina.com/">China Merchants Bank item recommendation platform</a>.
+                <a href="https://arxiv.org/pdf/2202.03097.pdf">[WWW 2022b]</a>
+                <b>
+                    <a href="https://arxiv.org/pdf/2202.03097.pdf">
+                        <font color="red">[🔌 Real-world Deployment]</font>
+                    </a>
+                </b></p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+                <a class='title' href="../project/index.html"><b>Mining Unbiased Patterns on Sequences for Recommendations</b></a><br/>
+                Implicit feedback (e.g., user clicks) is an important source of data for modern search engines but
+                heavily biased.
+                We propose <a href="https://arxiv.org/pdf/2004.14714.pdf">Deep Recurrent Survival Ranking (DRSR)</a>
+                that incorporates survival
+                analysis techniques with recurrent neural network to derive unbiased estimations of user feedbacks. <a
+                    href="https://arxiv.org/pdf/2004.14714.pdf">[SIGIR 2020a]</a></p>
+
+                
+                As DRSR models the relevance of click-through rate, we further it to <a href="https://arxiv.org/pdf/2208.01889.pdf">Hierarchical rEcurrent Ranking On the Entire Space (HEROES)</a>
+                to jointly optimize click-through rate and conversation predictions through behavior path "observation&rarr; click&rarr;conversion".   
+                HEROES could incorporate the contextual information to estimate these behaviors in a multi-scale fashion. <a
+                    href="https://arxiv.org/pdf/2208.01889.pdf">[CIKM 2022]</a></p>
+
+                
+                Despite elaborate architecture design, we propose a simple yet sufficient unbiased learning-to-rank paradigm named <a href="../preprints/InfoRank.pdf">unbiased Ranking via mutual Information minimization (InfoRank)</a> 
+                that can simultaneously mitigate the effects of both position and popularity biases by summarizing the impacts of those biases into a single observation factor, 
+                therefore providing a unified treatment of the bias problem. <a href="../preprints/InfoRank.pdf">[PREPRINT 2023d]</a></p>
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+<div class="cell">
+    <table>
+        <tr>
+            <td>
+                <a class='title' href="../project/index.html"><b>Towards Next Generation of Top-N Recommendation and Ranking Models</b></a><br/>
+                We notice that Probabilistic Ranking Principle would neglect the contextual dependence among
+                the candidate items, and make the whole pipeline non-differentiable due to the sort operation.
+                We propose <a href="../preprints/STARank.pdf">Set-To-Arrangement Ranking (STARank)</a>, a new framework directly generates 
+                the permutations of the candidate items without the need for individually scoring and sort operations; and is end-to-end differentiable.
+                <a
+                href="../preprints/STARank.pdf">[CIKM 2023]</a></p>
             </td>
         </tr>
     </table>
@@ -142,31 +259,13 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="../project/index.html"><b>New Graph Neural Network
-                        Architectures</b></a> <br/>
-                Due to the complex structures and large scales, it is hard to make predictions directly, thus the
-                existing approaches turn to compress the meticulous structures into only two nodes with one edge,
-                which may bring in noise and suffer from data sparsity.
-                We call this the early summarization issue and propose <a
-                    href="https://arxiv.org/pdf/2007.00216.pdf">Heterogeneous INteract and aggreGatE (GraphHINGE)</a>
-                to capture and aggregate the interactive patterns between each pair of nodes through their structured
-                neighborhoods.
-                <a href="https://arxiv.org/pdf/2007.00216.pdf">[KDD 2020]</a>
-                <a href="https://arxiv.org/pdf/2011.12683.pdf">[TOIS 2021]</a>
-                <b>
-                    <a
-                        href="https://www.amazon.science/research-awards/program-updates/aws-machine-learning-research-awards-recipients-announced">
-                        <font color="red">[🏆 AWS
-                            Machine Learning Research Project Award]</font>
-                    </a>
-                </b></p>
-
+                <a class='title' href="../project/index.html"><b>Mining Relevant Patterns on Graphs for Edge Predictions</b></a> <br/>
+                We refine "relevant patterns" by symbolic semantics on graphs, representing with meta-paths.
                 In order to bridge between symbolic semantics and subgraph topology, we propose <a
                     href="https://openreview.net/forum?id=PTRo58zPt3P">ANalogy subGraph
                     Embedding Learning (GraphANGEL)</a> to make prediction of each node pair based on the subgraphs
                 containing the pair, as well as other (analogy) subgraphs with the same graph patterns.
                 <a href="https://openreview.net/forum?id=PTRo58zPt3P">[ICLR 2022a]</a>
-                <!-- These researches are supported by <a href="https://www.dgl.ai/">Deep Graph Library Team</a>. -->
                 </a>
             </td>
         </tr>
@@ -178,7 +277,7 @@
         <tr>
             <td>
                 <a class='title' href="../project/index.html"><b>Simple Enhancements on
-                        Graph Neural Networks for Predictions</b></a><br/>
+                        Graph Neural Networks for Node and Edge Predictions</b></a><br/>
                 Graph neural networks and label propagation represent two interrelated modeling strategies designed to
                 exploit graph structure. We propose a <a href="https://arxiv.org/pdf/2103.13355.pdf">Label Trick</a> to accommodate the
                 parallel use of features and labels, which uses a randomly-selected portion of the training labels as
@@ -192,134 +291,37 @@
                 on the <a href="https://ogb.stanford.edu/docs/leader_nodeprop/">Open Graph Benchmark leaderboard</a>. We
                 further theoretically show that
                 under certain simplifying assumptions, the stochastic label trick can be reduced to an interpretable,
-                deterministic training objective. <a href="https://openreview.net/forum?id=VTNjxbFRKly">[ICLR 2022b]</a>
-                <!-- These researches are
-                supported by <a href="https://www.dgl.ai/">Deep Graph Library Team</a>. -->
+                deterministic training objective. <a href="https://openreview.net/forum?id=VTNjxbFRKly">[ICLR 2022b]</a></p>
+                
+
+                We reveal that the idea of <a href="https://arxiv.org/pdf/2103.13355.pdf">Label Trick</a> would be extended to the 
+                edge prediction task.
+                To this end, we introduce an edge splitter to specify the use of training edges where each edge is solely used as 
+                either topology or supervision.
+                Based on splitted edges, we develop <a href="../preprints/EMPIER.pdf">Edge-aware Message PassIng based REcommendation (EMPIRE)</a> that
+                generates the messages to the source nodes from their neighbor nodes (through topology edges) being aware of the target nodes (through supervision edges).
+                <a href="../preprints/EMPIER.pdf">[PREPRINT 2023e]</a> 
                 </a>
             </td>
         </tr>
     </table>
 </div>
 
-<!-- <div class="cell">
-    <table>
-        <tr>
-            <td>
-                <a class='title' href="../paper.html"><b>
-                        Graph Structure Enhancements for Learning and Planning</b></a> <a
-                    href="../paper.html"><b>(&#9758
-                        Slide)</b></a><br />
-                Besides the graph data in the real-world scenarioes, we demonstrate that the latent graph structures
-                such as state-transition graphs are also benefitical to learning algorithms. In this regard, we propose
-                <a href="../paper.html">Graph Enhanced Goal Oriented Reinforcement Learning (G2RL)</a> for effective
-                exploration and efficient training based on learning and planning on state-transition graphs.
-                <a href="../paper.html">[ICLR 2022c]</a>
-                </a>
-            </td>
-        </tr>
-    </table>
-</div> -->
 
-<h3>SEQUENCE STRUCTURED DATA MINING</h3>
+
+<h3>SEQUENTIAL DECISION-MAKING SYSTEMS</h3>
 
 <div class="cell">
     <table>
         <tr>
             <td>
-                <a class='title' href="../project/index.html"><b>New Sequential Neural Network
-                        Architectures</b></a><br/>
-                Implicit feedback (e.g., user clicks) is an important source of data for modern search engines but
-                heavily biased.
-                <!-- While heavily biased, it is cheap to collect and particularly useful for user-centric retrieval
-                applications.  -->
-                <!-- To develop an unbiased ranker with biased feedback, -->
-                We propose <a href="https://arxiv.org/pdf/2004.14714.pdf">Deep Recurrent Survival Ranking (DRSR)</a>
-                that incorporates survival
-                analysis techniques with recurrent neural network to derive unbiased estimations of user feedbacks. <a
-                    href="https://arxiv.org/pdf/2004.14714.pdf">[SIGIR 2020a]</a></p>
-                <!-- This research is supported by <a href="./files/ali.pdf">Alibaba Innovative Research Program</a>. -->
-                As users' demands are not only conditioned by their profile but also by their recent browsing behaviors
-                as well as periodical purchases made some time ago, we propose <a
-                    href="https://arxiv.org/pdf/2202.03097.pdf">Search-based
-                    Time-Aware Recommendation (STARec)</a> which captures the evolving demands of users over
-                time through a unified search-based time-aware model. <a
-                    href="https://arxiv.org/pdf/2202.03097.pdf">[WWW 2022a]</a></p>
-                <!-- This research is supported by <a href="../paper.html">China Merchants Bank</a>, and has been
-                successfully deployed at <a href="../paper.html">China Merchants Bank App</a>.
-                <a href="../paper.html">[WWW 2022a]</a> -->
-                <!-- <b>
-                    <a href="../paper.html">
-                        <font color="red">[🔌 Real-world Deployment]</font>
-                    </a>
-                </b> -->
-                With the prevalence of live broadcast business nowadays, live broadcast recommendation, is widely used
-                in many mobile e-commerce Apps. We propose <a href="https://arxiv.org/pdf/2202.04333.pdf">TWo-side
-                    Interactive NetworkS
-                    (TWINS)</a> to fully mine the interactive patterns of both static and dynamic information on user
-                and anchor sides, which is the first work for live broadcast recommendation to our knowledge. <a
-                    href="https://arxiv.org/pdf/2202.04333.pdf">[WWW 2022b]</a></p>
-                As user's multiple behaviors follow the behavior path "observation&rarr;click&rarr;conversion", we propose 
-                <a href="https://arxiv.org/pdf/2208.01889.pdf">Hierarchical rEcurrent Ranking On the Entire Space (HEROES)</a>
-                which incorporates the contextual information to estimate these behaviors in a multi-scale fashion. <a
-                href="https://arxiv.org/pdf/2208.01889.pdf">[CIKM 2022]</a></p>
-
-                Notice that Probabilistic Ranking Principle (PRP) would neglect the contextual dependence among
-                the candidate items, and make the whole pipeline non-differentiable due to the sort operation.
-                We propose <a href="../paper.html">Set-To-Arrangement Ranking (STARank)</a> to directly generate the
-                permutations of the set of candidate items in the context of the user browsed items without the sort operation.
-                <a
-                href="../paper.html">[WWW 2023a]</a></p>
-            </td>
-        </tr>
-    </table>
-</div>
-
-<div class="cell">
-    <table>
-        <tr>
-            <td>
-                <a class='title' href="../project/index.html"><b>Simple Enhancements on
-                        Recurrent Neural Networks for Predictions</b></a><br/>
-                Despite elaborate architecture design, we reveal that incorporation of user feedbacks (especially
-                feedbacks on previous item) as ranking features can significant improve the recommendation performance.
-                <a href="https://arxiv.org/pdf/2202.03097.pdf">[WWW 2022a]</a>
-                </p>
-
-                We propose a simple yet sufficient unbiased learning-to-rank paradigm named <a href="../paper.html">InfoRank</a> that can simultaneously mitigate 
-                the effects of both position and popularity biases by summarizing the impacts of those biases into a single observation factor, 
-                therefore providing a unified treatment of the bias problem. 
-                <a
-                href="../paper.html">[WWW 2023b]</a></p>
-            </td>
-        </tr>
-    </table>
-</div>
-
-<h3>APPLICATIONS OF STRUCTURED AND UNSTRUCTURED DATA MINING</h3>
-
-<div class="cell">
-    <table>
-        <tr>
-            <td>
-                <a class='title' href="../project/index.html"><b>Sequential Recommendation
-                        Algorithms
-                        on E-Commerce Platform</b></a><br/>
-                Our proposed algorithms <a href="https://arxiv.org/pdf/2202.03097.pdf"> STARec</a> and <a
-                    href="https://arxiv.org/pdf/2202.04333.pdf"> TWINS</a>
-                have been successfully deployed at <a href="http://www.cmbchina.com/">China Merchants Bank</a> and <a
-                    href="https://taolive.taobao.com/">Taobao Diantao Apps</a>. <a
-                    href="https://arxiv.org/pdf/2202.03097.pdf">[WWW 2022a]</a>
-                <b><a href="https://arxiv.org/pdf/2202.03097.pdf">
-                        <font color="red">[🔌 Real-world Deployment]</font></b>
-                </a> <a href="https://arxiv.org/pdf/2202.04333.pdf">[WWW 2022b]</a> <a
-                    href="https://arxiv.org/pdf/2202.04333.pdf">
-                    <b>
-                        <font color="red">[🔌 Real-world Deployment]</font>
+                <a class='title' href="../project/index.html"><b>New Graph Enhanced Sequential Decision-Making Systems</b></a><br/>
+                Goal-oriented reinforcement learning is a promising approach for scaling up reinforcement learning techniques on sparse reward 
+                environments requiring long horizon planning.
+                We propose <a href="https://openreview.net/forum?id=rlYiXFdSy70">Graph-Enhanced reinforcement learning (GrapE)</a>, a new framework for effective exploration and efficient training based on 
+                the state-transition graph.
+                <a href="https://openreview.net/forum?id=rlYiXFdSy70">[PREPRINT 2022]</a> 
                 </a></b>
-                <!-- As users’ demands are not only conditioned by their profile but also by their previous browsing
-                behaviors, we propose <a href="../paper.html">User Behavior Retrieval (UBR)</a> to incorporate users'
-                related historical records to make predictions. <a href="../paper.html">[SIGIR
-                    2020b]</a> -->
                 </a>
             </td>
         </tr>
@@ -330,7 +332,7 @@
     <table>
         <tr>
             <td>
-                <a class='title' href="../paper.html"><b>Learning and Planning Algorithms on Ride-Hailing Platform</b></a><br/>
+                <a class='title' href="../project/index.html"><b>Learning and Planning Algorithms on Ride-Hailing Platform</b></a><br/>
                 In a general view, there are two major decision-making tasks for such ride-hailing platforms, namely
                 order dispatching and fleet management.
                 Most of the previous work deals with either order dispatching or fleet management without regarding the
