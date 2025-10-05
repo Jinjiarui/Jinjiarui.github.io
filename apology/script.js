@@ -8,7 +8,7 @@ let clickCount = 0;  // 记录点击 No 的次数
 // No 按钮的文字变化
 
 const noTexts = [
-    "我知道错啦，宝宝",
+    "我知道错啦，宝贝",
     "以后都听你的qaq",
     "我要挣好多钱给你花",
     "拜托拜托",
@@ -58,3 +58,4 @@ yesButton.addEventListener("click", function() {
     document.body.style.overflow = "hidden";
 
 });
+
